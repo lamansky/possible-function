@@ -1,6 +1,6 @@
 {
   "name": "possible-function",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Defines fallback behavior in case a variable is not a function. Perfect for optional callback parameters.",
   "keywords": [
     "function",
