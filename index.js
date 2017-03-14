@@ -21,7 +21,7 @@ module.exports = function PossibleFunction (mightBeAFunction, elseReturn) {
   if (Array.isArray(mightBeAFunction) && mightBeAFunction.length === 2) {
     const [object, functionName] = mightBeAFunction
     if (typeof object === 'object' && typeof functionName === 'string' && typeof object[functionName] === 'function') {
-      mightBeAFunction = object[functionName]
+      mightBeAFunction = object[functionName].bind(object)
     }
   }
 

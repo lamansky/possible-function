@@ -19,7 +19,7 @@ describe('PossibleFunction()', function () {
   it('should support class method arrays', function (done) {
     class Test {
       example (arg) {
-        if (arg) done()
+        if (arg && this instanceof Test) done()
       }
     }
     const test = new Test()
